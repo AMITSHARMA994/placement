@@ -1,0 +1,16 @@
+#include<stdio.h>
+main(){
+	int n,t,r=0,d;
+	printf("enter a number :");
+	scanf("%d",&n);
+		t=n;
+		while(t){
+			d=t%10;
+			r=r*10+d;
+			t=t/10;
+		}
+		if(n==r)
+		   printf("%d is a palidrome");
+		else
+		    printf("%d is a not palidrome");
+}
